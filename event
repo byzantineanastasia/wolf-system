@@ -1,0 +1,52 @@
+{
+  "name": "wolf event",
+  "temp": "message",
+  "event-type": "2",
+  "_id": "uWqpa",
+  "actions": [
+    {
+      "storage": "1",
+      "varName": "number",
+      "min": "1",
+      "max": "100",
+      "name": "Generate Random Number"
+    },
+    {
+      "storage": "1",
+      "varName": "number",
+      "comparison": "14",
+      "value": "50",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "message": "1",
+      "varName": "message",
+      "info": "4",
+      "storage": "1",
+      "varName2": "channel",
+      "name": "Store Message Info"
+    },
+    {
+      "channel": "5",
+      "varName": "channel",
+      "message": "a wolf has appeared\n\ncatch it before its gone ",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "wolfon",
+      "changeType": "0",
+      "value": "1",
+      "name": "Control Server Data"
+    }
+  ]
+}
