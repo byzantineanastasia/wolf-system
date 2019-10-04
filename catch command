@@ -1,0 +1,84 @@
+{
+  "name": "catch",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "gwsKF",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "wolfon",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "data",
+      "name": "Store Server Data"
+    },
+    {
+      "storage": "1",
+      "varName": "data",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "theres nothing to catch.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "wolf caught\n",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "wolves",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "wolves",
+      "name": "Store Member Data"
+    },
+    {
+      "FirstNumber": "${tempVars(\"wolves\")}",
+      "info": "0",
+      "SecondNumber": "1",
+      "storage": "1",
+      "varName": "new wolves",
+      "name": "Basic Math Operation"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "wolves",
+      "changeType": "0",
+      "value": "tempVars(\"new wolves\")",
+      "name": "Control Member Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "wolfon",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Server Data"
+    }
+  ]
+}
